@@ -1,0 +1,63 @@
+:root {
+  --saffron: #ff9933;
+  --saffron-dark: #e67e22;
+  --green: #138808;
+  --green-dark: #0f6b06;
+  --ink: #1a1a1a;
+  --muted: #5c5c5c;
+  --paper: #fffaf3;
+  --card: #ffffff;
+  --border: rgba(19, 136, 8, 0.18);
+  --shadow: 0 8px 28px rgba(26, 26, 26, 0.08);
+  --radius: 14px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  font-family: "Mukta", "DM Sans", system-ui, sans-serif;
+  line-height: 1.45;
+  font-weight: 400;
+  color: var(--ink);
+  background: linear-gradient(165deg, #fff5e6 0%, #f0fff4 48%, #fff 100%);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
